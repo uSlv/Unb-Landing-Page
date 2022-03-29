@@ -76,14 +76,18 @@ nav ul li a:hover{
 .marca a{
 }
 
+#btn-mobile{
+    display: none;
+}
+
+
+
 /*FIM NAVBAR*/
 
 main{
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 87px;
-    height: auto;
+    justify-content: space-around;
 }
 
 main section h1{
@@ -100,11 +104,20 @@ main section h1 strong{
 .info{
     width: 50vw;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h1{
+    margin-top: 100px;
 }
 
 .slideshow{
     width: 30vw;
-    height: 400px;
+    height: auto;
+    position: relative;
 }
 
 
@@ -120,17 +133,117 @@ main section h1 strong{
 .botao{
     background-color: var(--blue);
     color: white;
-    font-size: 20px ;
+    font-size: 3vh ;
     border: none;
-    width: 20-%;
+    width: 20%;
     height:30px;
     border-radius: 5px;
-    justify-content: center;
     cursor: pointer;
+    margin-top: 155px;
 }
 
 .box-slide{
-    height: 100%;
-    width: 100%;
-    display: block;
+
+}
+
+.item{
+    height: auto;
+} 
+
+
+/*
+ MEDIA QUERY
+*/
+
+@media (max-width:1180px){
+    nav ul{
+      display: none;
+    }
+    .marca{
+        justify-content: center;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 30%;
+        top: 110px;
+        right: 0px;
+        background: #008940e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        border-radius: 20px;
+      }
+
+      #nav.active #menu {
+        height: 50%;
+        visibility: visible;
+        overflow-y: auto;
+        display: block;
+        
+      }
+
+      #menu a{
+          color: var(--primary);
+        margin: 0 1rem;
+        border-bottom: 2px solid var(--blue);
+        
+      }
+
+      #menu li{
+          margin-top: 20px;
+        padding-bottom: 30px;
+      }
+
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+        color: var(--green);
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+        
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+        color: red;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+}
+
+@media(max-width:578px){
+    nav .marca h1{
+        display: none;
+    }
+
+    nav .marca img{
+        width: 20%;
+    }
 }

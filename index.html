@@ -11,19 +11,21 @@
     <!--Owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
-    
+   
 </head>
 
 <body>
     <div class="container">
         <header>
-            <nav>
+            <nav id="nav">
                 <div class="marca">
                     <img class="logo" src="images/logo.jpg" alt="" width="10%">
                     <h1>FACULDADE DE MEDICINA</h1>
                 </div>
-
-                <ul>
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                 <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
                     <li><a href="#">SOBRE</a></li>
                     <li><a href="#">PESQUISA</a></li>
                     <li><a href="#">EXTENSÃO</a></li>
@@ -36,7 +38,7 @@
             <section class="info">
 
                 <div class="vertical-line"></div>
-                <h1>Bem-vindo à <strong>Faculdade de Medicina</strong></h1>
+                <h1>Bem-vindo à <strong> <br> Faculdade de Medicina</strong></h1>
                 <div class="vertical-line1"></div>
                 <button class="botao">SAIBA MAIS</button>
             </section>
@@ -67,6 +69,7 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/main.js"></script>
+    <script src="js/toggle.js"></script>
 
 </body>
 

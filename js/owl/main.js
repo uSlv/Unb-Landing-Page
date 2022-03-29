@@ -8,3 +8,4 @@ $('.owl-carousel').owlCarousel({
     smartSpeed: 1500,
     autoplayHoverPause: true,
 })
+
