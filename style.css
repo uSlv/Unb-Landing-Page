@@ -86,19 +86,20 @@ main section h1{
     font-size: 80px;
     text-align: center;
     font-family: var(--font1);
-    color: var(--green);
-}
-
-main section h1 strong{
     color: var(--blue);
 }
 
-.info{
+main section h1 strong{
+    color: var(--green);
+}
 
+.info{
+    width: 50vw;
+    height: 696px;
 }
 
 .slideshow{
-    width: 350px;
+    width: 30vw;
     height: 696px;
 }
 
@@ -117,7 +118,7 @@ main section h1 strong{
     color: white;
     font-size: 20px ;
     border: none;
-    width: 15%;
+    width: 20-%;
     height:30px;
     border-radius: 5px;
     justify-content: center;
