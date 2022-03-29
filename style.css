@@ -52,11 +52,14 @@ nav ul li a{
     color: #000;
     text-decoration: none;
     font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 nav ul li a:hover{
     color: var(--green);
     font-weight: 700;
+    
 }
 
 .marca{
@@ -80,6 +83,7 @@ main{
     align-items: center;
     justify-content: center;
     margin-top: 87px;
+    height: auto;
 }
 
 main section h1{
@@ -95,12 +99,12 @@ main section h1 strong{
 
 .info{
     width: 50vw;
-    height: 696px;
+    height: 400px;
 }
 
 .slideshow{
     width: 30vw;
-    height: 696px;
+    height: 400px;
 }
 
 
