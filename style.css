@@ -1,6 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+:root{
+    --font1:'Playfair Display', serif;
+    --font2:'Roboto', sans-serif;
+
+    --primary:#fff;
+    --secondary:#000;
+
+    --green:#008940;
+    --blue:#133E79;
+}
+body{
+    font-family: var(--font2);
+    margin: 77px 90px;
+    height: 100vh;
+}
+
+.container{
+
+}
+
+ /*INICIO NAVBAR*/
+
+header{
+  
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav ul li a:hover{
+    color: var(--green);
+    font-weight: 700;
+}
+
+.marca{
+    align-items: center;
+    display: flex;
+    
+}
+
+.marca h1{
+    padding-left: 20px;
+    color: var(--blue);
+}
+
+.marca a{
+}
+
+/*FIM NAVBAR*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 87px;
+}
+
+main section h1{
+    font-size: 80px;
+    text-align: center;
+    font-family: var(--font1);
+    color: var(--green);
+}
+
+main section h1 strong{
+    color: var(--blue);
+}
+
+.info{
+
+}
+
+.slideshow{
+    width: 350px;
+    height: 696px;
+}
+
+
+.vertical-line{
+
+}
+
+.vertical-line1{
+
+
+}
+
+.botao{
+    background-color: var(--blue);
+    color: white;
+    font-size: 20px ;
+    border: none;
+    width: 15%;
+    height:30px;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box-slide{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
